@@ -14,11 +14,11 @@ const API_KEY = " " //Add you API KEY here
 type WeatherResponse struct {
 	Name string `json:"name"` //City name
 	Sys  struct {
-		Country string `json:"country"` // Country code
+		Country string `json:"country"`
 	} `json:"sys"`
 	Main struct {
-		Temp     float64 `json:"temp"`     // Temperature in celsius
-		Humidity int     `json:"humidity"` // Humidity percentage
+		Temp     float64 `json:"temp"`    
+		Humidity int     `json:"humidity"` 
 	} `json:"main"`
 	Weather []struct {
 		Main        string `json:"main"`        // main condition
@@ -122,4 +122,5 @@ func main() {
 		}
 	}
 }
+
 
