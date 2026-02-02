@@ -21,8 +21,8 @@ type WeatherResponse struct {
 		Humidity int     `json:"humidity"` 
 	} `json:"main"`
 	Weather []struct {
-		Main        string `json:"main"`        // main condition
-		Description string `json:"description"` // Detailed condition
+		Main        string `json:"main"`      
+		Description string `json:"description"` 
 	} `json:"weather"`
 	Cod int `json:"cod"`
 }
@@ -122,5 +122,6 @@ func main() {
 		}
 	}
 }
+
 
 
