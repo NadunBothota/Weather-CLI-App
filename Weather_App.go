@@ -9,7 +9,6 @@ import (
 	"strings"
 )
 
-// openWeatherMap API key
 const API_KEY = " " //Add you API KEY here
 
 type WeatherResponse struct {
@@ -123,3 +122,4 @@ func main() {
 		}
 	}
 }
+
