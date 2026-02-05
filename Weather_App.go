@@ -109,18 +109,18 @@ func main() {
 			fmt.Println(strings.Repeat("-", 30))
 		}
 
-		// Getting input if the user needs to continue or exit the system
+		
 		fmt.Print("\nDo you want to check another city? (yes/no): ")
 		choice, _ := inputReader.ReadString('\n')
 		choice = strings.TrimSpace(strings.ToLower(choice))
 
-		// if the user enter anything other than yes/y the system exits
 		if choice != "yes" && choice != "y" {
 			fmt.Println("👋 Thank you for using the Go Weather App. Stay safe!")
 			break
 		}
 	}
 }
+
 
 
 
