@@ -53,7 +53,6 @@ func getWeather(cityName string) (*WeatherResponse, error) {
 	return &weather, nil
 }
 
-// Function for choose a weather icon based on the condition
 func getWeatherIcon(condition string) string {
 	switch strings.ToLower(condition) {
 	case "clear":
@@ -122,6 +121,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
