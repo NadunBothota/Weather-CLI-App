@@ -32,14 +32,13 @@ func getWeather(cityName string) (*WeatherResponse, error) {
 	// Construct the API URL with city and API key
 	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric", cityName, API_KEY)
 
-	//send the HTTP GET request to the Weather API
+
 	httpResponse, requestError := http.Get(url)
 	if requestError != nil {
 		return nil, fmt.Errorf("failed to connect to API: %v", requestError)
 	}
 	defer httpResponse.Body.Close()
 
-	//Decode the JSON structure into our WeatherResponse struct
 	var weather WeatherResponse
 	if requestError := json.NewDecoder(httpResponse.Body).Decode(&weather); requestError != nil {
 		return nil, fmt.Errorf("error decoding response: %v", requestError)
@@ -120,6 +119,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
