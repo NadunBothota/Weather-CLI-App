@@ -95,11 +95,11 @@ func main() {
 			fmt.Printf("\nFetching weather for %s...\n", cityName)
 			weatherData, requestError := getWeather(cityName)
 			if requestError != nil {
-				fmt.Printf("❌ Error: %v\n", requestError) // If the fetching weather is fail disply error message
+				fmt.Printf("❌ Error: %v\n", requestError)
 				continue
 			}
 
-			//Display the weather details
+			
 			icon := getWeatherIcon(weatherData.Weather[0].Main)
 			fmt.Printf("\n🌆 %s, %s\n", weatherData.Name, weatherData.Sys.Country)
 			fmt.Printf("Temperature: %.1f°C\n", weatherData.Main.Temp)
@@ -119,6 +119,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
