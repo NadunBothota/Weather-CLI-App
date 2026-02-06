@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-const API_KEY = " " //Add you API KEY here
+const API_KEY = " " 
 
 type WeatherResponse struct {
 	Name string `json:"name"` //City name
@@ -120,6 +120,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
