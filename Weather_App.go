@@ -12,7 +12,7 @@ import (
 const API_KEY = " " 
 
 type WeatherResponse struct {
-	Name string `json:"name"` //City name
+	Name string `json:"name"`
 	Sys  struct {
 		Country string `json:"country"`
 	} `json:"sys"`
@@ -119,6 +119,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
