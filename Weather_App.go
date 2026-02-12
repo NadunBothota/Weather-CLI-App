@@ -29,7 +29,7 @@ type WeatherResponse struct {
 
 
 func getWeather(cityName string) (*WeatherResponse, error) {
-	// Construct the API URL with city and API key
+	
 	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric", cityName, API_KEY)
 
 
@@ -119,6 +119,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
