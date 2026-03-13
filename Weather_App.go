@@ -87,7 +87,7 @@ func main() {
 
 		for _, cityName := range cities {
 			cityName = strings.TrimSpace(cityName)
-			if cityName == "" { //Skip if there empty string
+			if cityName == "" { 
 				continue
 			}
 
@@ -118,6 +118,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
