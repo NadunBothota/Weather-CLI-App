@@ -44,7 +44,7 @@ func getWeather(cityName string) (*WeatherResponse, error) {
 		return nil, fmt.Errorf("error decoding response: %v", requestError)
 	}
 
-	// Checking the API returned a valid city
+	
 	if weather.Cod != 200 {
 		return nil, fmt.Errorf("city '%s' not found or API error", cityName)
 	}
@@ -118,6 +118,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
