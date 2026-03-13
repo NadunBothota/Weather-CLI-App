@@ -74,7 +74,7 @@ func getWeatherIcon(condition string) string {
 }
 
 func main() {
-	// greeting for the user
+	
 	inputReader := bufio.NewReader(os.Stdin)
 	fmt.Println("🌤️  Hello! Welcome to the Weather App!")
 
@@ -118,6 +118,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
