@@ -79,7 +79,7 @@ func main() {
 	fmt.Println("🌤️  Hello! Welcome to the Weather App!")
 
 	for {
-		fmt.Print("\nEnter city or cities: ") //Ask the user to input
+		fmt.Print("\nEnter city or cities: ") 
 		userInput, _ := inputReader.ReadString('\n')
 		userInput = strings.TrimSpace(userInput)
 		formattedInput := strings.ReplaceAll(userInput, ",", " ") // Use can use comma or space to separate inputs
@@ -118,6 +118,7 @@ func main() {
 		}
 	}
 }
+
 
 
 
